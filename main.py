@@ -1,0 +1,52 @@
+import time
+from machine import Pin
+from motor import Motor
+
+
+Pin(5, Pin.OUT).off()
+Pin(4, Pin.OUT).off()
+Pin(13, Pin.OUT).off()
+Pin(12, Pin.OUT).off()
+m1 = Motor(5, 4, 15, 50)#D1 D2 D8
+m2 = Motor(13, 12, 14, 50)#D7 D6 D5
+# dir1 = Pin(16, Pin.OUT)
+# dir2 = Pin(5, Pin.OUT)
+# while True:    
+#     m1.forward()
+#     m2.forward()
+#     m1.setSpeed(70)
+#     m2.setSpeed(70)
+#     time.sleep(2)
+#     m1.setSpeed(100)
+#     m2.setSpeed(100)
+#     time.sleep(2)
+#     m1.setSpeed(70)
+#     m2.setSpeed(70)
+#     time.sleep(2)
+#     m1.setSpeed(50)
+#     m2.setSpeed(50)
+#     time.sleep(2)
+#     m1.stop()
+#     m2.stop()
+#     time.sleep(5)
+#     m1.backward()
+#     m2.backward()
+#     m1.setSpeed(70)
+#     m2.setSpeed(70)
+#     time.sleep(2)
+#     m1.setSpeed(100)
+#     m2.setSpeed(100)
+#     time.sleep(2)
+#     m1.setSpeed(70)
+#     m2.setSpeed(70)
+#     time.sleep(2)
+#     m1.setSpeed(50)
+#     m2.setSpeed(50)
+#     time.sleep(2)
+
+#     dir1.off()
+#     dir2.on()
+#     time.sleep(10)
+#     dir1.on()
+#     dir2.off()
+#     time.sleep(10)
